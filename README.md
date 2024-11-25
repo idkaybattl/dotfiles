@@ -3,21 +3,12 @@ Configured with GNU Stow
 
 ## How to Use
 
-### Assisted Install (Arch only)
-1. Clone the repo and run the installer
-
-   ```shell
-   git clone https://github.com/arithefirst/dotfiles ~/dotfiles && \
-   cd ~/dotfiles/ && sh installer.sh
-   ```
-2. Pick the apps you want to install from the menu
-
 ### Manual Install
 1. Clone this repo:
 
     ```shell
-    git clone --recursive https://github.com/arithefirst/dotfiles.git $HOME/dotfiles
-    cd $HOME/dotfiles/
+    git clone --recursive https://github.com/idkaybattl/dotfiles.git $HOME/.dotfiles
+    cd $HOME/.dotfiles/
     ```
 2. Install GNU Stow:
 
@@ -37,6 +28,10 @@ Configured with GNU Stow
 ## Credits
 
 Unless specified below, all work in this repository was done by me.
+
+### Template (almost everything atm)
+- Credits to https://github.com/arithefirst
+
 
 ### Hyprland
 - Credits for all wallpapers are in hyprland/.wallpapers/README.md
