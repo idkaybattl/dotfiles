@@ -1,0 +1,26 @@
+# https://github.com/arithefirst/dotfiles
+
+# Colorscheme
+theme = catppuccin-mocha
+background-opacity = 0.75
+background = #1e1e2e
+
+# Fonts
+font-family = "Hack Nerd Font"
+
+# Keybinds
+keybind = ctrl+shift+)=new_split:right
+keybind = ctrl+shift+(=new_split:down
+
+# Replace default catppuccin 
+# pink color with mauve
+palette = 5=#CBA6F7
+palette = 13=#CBA6F7
+
+# Window Decorations
+window-decoration = false
+window-theme = ghostty
+
+# Cursor
+shell-integration-features = no-cursor
+cursor-style = bar

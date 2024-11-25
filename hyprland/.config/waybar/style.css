@@ -1,0 +1,183 @@
+* {
+  border: none;
+  border-radius: 4px;
+  /* `ttf-font-awesome` is required to be installed for icons */
+  font-family: "Roboto Mono Medium", Helvetica, Arial, sans-serif;
+
+  font-size: 12px;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces {
+  padding-top: 0.45rem;
+  padding-bottom: 0.4rem;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  margin-left: 12px;
+  background-color: rgba(30,30,46,0.8);
+  color: #ffffff;
+  box-shadow: inset 0 -3px #585b70;
+}
+
+#workspaces button:hover {
+  background: #181825;
+  box-shadow: inset 0 -3px #cdd6f4;
+}
+
+#workspaces button.active {
+  background-color: rgba(30,30,46,0.8);
+  box-shadow: inset 0 -3px #cba6f7;
+}
+
+#workspaces button.urgent {
+  color: #1e1e2e;
+  background-color: #f9e2af;
+}
+
+#mode {
+  background-color: #64727d;
+  border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#custom-wlogout {
+  padding: 0 15px;
+  margin: 6px 5px;
+  color: #cdd6f4;
+}
+
+#clock {
+  padding-top: 4px;
+}
+
+#window {
+  margin: 0 4px;
+}
+
+#clock, #tray, #custom-wlogout {
+  background-color: rgba(30,30,46,0.8);
+}
+
+#custom-wlogout {
+  padding: 0 15px 1px 11px;
+  margin: 6px 10px 6px 3px;
+  color: #cdd6f4;
+}
+
+#battery {
+  background-color: rgba(30,30,46,0.8);
+  color: #cdd6f4;
+}
+
+#battery.charging {
+  color: #1e1e2e;
+  background-color: #a6e3a1;
+}
+
+@keyframes blink {
+  to {
+    background-color: #cdd6f4;
+    color: #cdd6f4;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f38ba8;
+  color: #cdd6f4;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#cpu {
+  background-color: rgba(30,30,46,0.8);
+  color: #cdd6f4;
+}
+
+#memory {
+  background-color: rgba(30,30,46,0.8);
+}
+
+#backlight {
+  background-color: rgba(30,30,46,0.8);
+}
+
+#network {
+  background-color: rgba(30,30,46,0.8);
+}
+
+#network.disconnected {
+  background-color: #f38ba8;
+}
+
+#pulseaudio {
+  background-color: rgba(30,30,46,0.8);
+  color: #cdd6f4;
+}
+
+#pulseaudio.muted {
+  background-color: rgba(30,30,46,0.8);
+  color: #cdd6f4;
+}
+
+#custom-media {
+  background-color: rgba(30,30,46,0.8);
+  color: #cdd6f4;
+  min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+  background-color: rgba(30,30,46,0.8);
+}
+
+#custom-media.custom-vlc {
+  background-color: rgba(30,30,46,0.8);
+}
+
+#temperature {
+  background-color: rgba(30,30,46,0.8);
+}
+
+#temperature.critical {
+  background-color: #f38ba8;
+}
+
+#language {
+  background: rgba(30,30,46,0.8);
+  color: #cdd6f4;
+  padding: 0 5px;
+  margin: 6px 3px;
+  min-width: 16px;
+}

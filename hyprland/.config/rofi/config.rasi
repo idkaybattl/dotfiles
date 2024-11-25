@@ -1,0 +1,22 @@
+configuration {
+  show-icons: true;
+
+  display-ssh:    "󰣀 ssh:";
+  display-run:    "󱓞 run:";
+  display-drun:   "󰣖 Launch:";
+  display-window: "󱂬 window:";
+  display-combi:  "󰕘 combi:";
+  display-filebrowser: "󰉋 filebrowser:";
+  modi: "drun,run,ssh";
+
+  clipboard {
+    display-name: " Clipboard:";
+  }
+
+  wallpaper {
+    display-name: "󰍹 Wallpaper:";
+  }
+
+}
+
+@theme "~/.config/rofi/catppuccin.rasi"

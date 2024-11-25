@@ -1,0 +1,9 @@
+# Ignore Certain Files
+zsh/.oh-my-zsh/** linguist-vendored
+tmux/.tmux/plugins/** linguist-vendored
+zsh/.zsh/** linguist-vendored
+yazi/.config/yazi/theme.toml linguist-vendored
+hyprland/.config/swaync/style.css linguist-vendored
+
+# Add other filetypes
+*.toml linguist-detectable linguist-language=TOML
