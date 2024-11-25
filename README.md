@@ -27,8 +27,6 @@ Configured with GNU Stow
 
 ## Credits
 
-Unless specified below, all work in this repository was done by me.
-
 ### Template (almost everything atm)
 - Credits to https://github.com/arithefirst
 
