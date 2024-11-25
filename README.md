@@ -32,7 +32,7 @@ Configured with GNU Stow
 
 
 ### Hyprland
-- Credits for all wallpapers are in hyprland/.wallpapers/README.md
+- Credits for all wallpapers are in ./hyprland/.wallpapers/README.md
 
 ### Tmux
 - `tmux-copycat` from [tmux-plugins/tmux-copycat](https://github.com/tmux-plugins/tmux-copycat)
