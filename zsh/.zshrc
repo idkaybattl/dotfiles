@@ -1,24 +1,22 @@
 # Splash Screen
 fastfetch
 
-# Set theme, enable corrections
-ENABLE_CORRECTION="true"
-ZSH_THEME="bira"
+# ZINIT
+# Set the directory we want to store zinit and plugins
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-# Oh my ZSH Stuff
-export ZSH="$HOME/.oh-my-zsh"
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
-source ~/.zsh/command-not-found.zsh
-plugins=(zsh-syntax-highlighting command-not-found)
-source $ZSH/oh-my-zsh.sh
+# Download Zinit, if it's not there yet
+if [ ! -d "$ZINIT_HOME" ]; then
+    mkdir -p "$(dirname $ZINIT_HOME)"
+    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
 
-# $PATH
-export PATH="$HOME/.bun/bin:$PATH"
-export PATH=$PATH:/home/ari/.spicetify
-export PATH=$PATH:/home/ari/.cargo/bin
-export PATH=$PATH:/home/ari/.local/bin
-export TESSDATA_PREFIX=/usr/share/tessdata
-export GPG_TTY=$(tty)
+# Source/Load zinit
+source "${ZINIT_HOME}/zinit.zsh"
+
+
+# Binds
+bindkey '^f' autosuggest-accept
 
 # Aliases 
 alias ls="eza --color=always --git --no-filesize --icons=always --no-user --no-permissions"
@@ -26,18 +24,43 @@ alias vim="nvim"
 alias cat='bat --theme="Catppuccin Mocha"'
 alias code='vscodium'
 alias blahaj='display3d /home/ari/.blahaj/blahaj.obj'
-alias neofetch='fastfetch'
 alias pipes='pipes.sh'
+alias discord='vesktop'
 
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:-1,fg+:#d0d0d0,bg:-1,bg+:-1
-  --color=hl:#f38ba8,hl+:#5fd7ff,info:#cba6f7,marker:#f5e0dc
-  --color=prompt:#cba6f7,spinner:#f5e0dc,pointer:#f5e0dc,header:#f38ba8
-  --color=border:#d0d0d0,label:#aeaeae,query:#d9d9d9
-  --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="$ "
-  --marker=">" --pointer=">" --separator="─" --scrollbar="│"'
+# Initialize Starship
+eval "$(starship init zsh)"
 
+# Add in zsh Plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# Add in zsh snippets
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::command-not-found
+
+# Load Completions
+autoload -U compinit && compinit
+
+# History stuff
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_all_dups
+setopt hist_find_no_dups
+
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' menu no
+
+# Shell Integrations
 eval "$(fzf --zsh)"
-
-# bun completions
-[ -s "/home/ari/.bun/_bun" ] && source "/home/ari/.bun/_bun" ]

@@ -9,7 +9,7 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 
 -- Set tabwidth to 2
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-vim.bo.softtabstop = 2
+vim.bo.softtabstop = 4
