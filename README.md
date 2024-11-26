@@ -28,7 +28,7 @@ Configured with GNU Stow
 ## Credits
 
 ### Template (almost everything atm)
-- Credits to https://github.com/arithefirst
+- Credits to [arithefirst] (https://github.com/arithefirst)
 
 
 ### Hyprland
