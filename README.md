@@ -47,6 +47,3 @@ Configured with GNU Stow
 
 ### Yazi
 - Color Scheme from [catppuccin](https://github.com/catppuccin/yazi)
-
-### ZSH
-- Powerline and Plugins from [Oh My ZSH](https://ohmyz.sh/)
