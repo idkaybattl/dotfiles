@@ -5,6 +5,6 @@
 
 ## Installation
 ``
-Arch Linux
+# On Arch Linux
 yay -S kitty
 ``
