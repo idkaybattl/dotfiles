@@ -1,8 +1,10 @@
 # Vesktop Catppuccin Theme
 
+## Dependencies
+- vesktop
+
 ## Install Vesktop (not Flatpak)
-
-On Arch:
+```
+#On Arch:
 yay -S vesktop
-
-That's it!
+```
