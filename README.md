@@ -52,7 +52,7 @@ yay -S discover-overlay
 ## Credits
 
 ### Template (almost everything atm)
-- Credits to https://github.com/arithefirst
+- Credits to [arithefirst](https://github.com/arithefirst)
 
 
 ### Hyprland
@@ -71,6 +71,3 @@ yay -S discover-overlay
 
 ### Yazi
 - Color Scheme from [catppuccin](https://github.com/catppuccin/yazi)
-
-### ZSH
-- Powerline and Plugins from [Oh My ZSH](https://ohmyz.sh/)
