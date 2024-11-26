@@ -25,6 +25,30 @@ Configured with GNU Stow
    # Loads nvim config
    ```
 
+## Additional Configuration
+
+### Screen Sharing on Hyprland (Discord)
+
+https://wiki.hyprland.org/Useful-Utilities/Screen-Sharing/
+
+Please install normal xwaylandvideobridge from aur.
+For discord to work with screen sharing you also need to change the Exec in the discord.desktop file to: 
+```
+Exec=env XDG_SESSION_TYPE=x11 /usr/bin/discord 
+```
+(most likely in /usr/share/applications/ unless you're using the flatpak version)
+
+
+### Install Discord Overlay
+
+https://github.com/trigg/Discover
+
+```
+# On Arch Linux
+yay -S discover-overlay
+```
+
+
 ## Credits
 
 ### Template (almost everything atm)

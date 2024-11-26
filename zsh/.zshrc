@@ -25,7 +25,6 @@ alias cat='bat --theme="Catppuccin Mocha"'
 alias code='vscodium'
 alias blahaj='display3d /home/ari/.blahaj/blahaj.obj'
 alias pipes='pipes.sh'
-alias discord='vesktop'
 
 # Initialize Starship
 eval "$(starship init zsh)"
