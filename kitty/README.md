@@ -4,7 +4,7 @@
 - kitty
 
 ## Installation
-``
+```
 # On Arch Linux
 yay -S kitty
-``
+```
