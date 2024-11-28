@@ -1,15 +1,15 @@
 * {
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   /* `ttf-font-awesome` is required to be installed for icons */
-  font-family: "Roboto Mono Medium", Helvetica, Arial, sans-serif;
+  font-family: "MesloLGS Nerd Font Mono", "Roboto Mono Medium", Helvetica, Arial, sans-serif;
 
-  font-size: 12px;
+  font-size: 13px;
   min-height: 0;
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(40, 20, 80, 0.3);
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -21,14 +21,13 @@ window#waybar.hidden {
 }
 
 #workspaces {
-  padding-top: 0.45rem;
-  padding-bottom: 0.4rem;
+  padding: 4px 0;
 }
 
 #workspaces button {
-  padding: 0 5px;
-  margin-left: 12px;
-  background-color: rgba(30,30,46,0.8);
+  padding: 0 5px 2px 5px;
+  margin-left: 10px;
+  background-color: rgba(30,30,46,0.7);
   color: #ffffff;
   box-shadow: inset 0 -3px #585b70;
 }
@@ -67,13 +66,9 @@ window#waybar.hidden {
 #idle_inhibitor,
 #mpd,
 #custom-wlogout {
-  padding: 0 15px;
-  margin: 6px 5px;
+  padding: 0 8px;
+  margin: 4px 5px;
   color: #cdd6f4;
-}
-
-#clock {
-  padding-top: 4px;
 }
 
 #window {
@@ -81,17 +76,16 @@ window#waybar.hidden {
 }
 
 #clock, #tray, #custom-wlogout {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
 }
 
 #custom-wlogout {
-  padding: 0 15px 1px 11px;
   margin: 6px 10px 6px 3px;
   color: #cdd6f4;
 }
 
 #battery {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
   color: #cdd6f4;
 }
 
@@ -122,20 +116,20 @@ label:focus {
 }
 
 #cpu {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
   color: #cdd6f4;
 }
 
 #memory {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
 }
 
 #backlight {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
 }
 
 #network {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
 }
 
 #network.disconnected {
@@ -143,31 +137,31 @@ label:focus {
 }
 
 #pulseaudio {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
   color: #cdd6f4;
 }
 
 #pulseaudio.muted {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
   color: #cdd6f4;
 }
 
 #custom-media {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
   color: #cdd6f4;
   min-width: 100px;
 }
 
 #custom-media.custom-spotify {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
 }
 
 #custom-media.custom-vlc {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
 }
 
 #temperature {
-  background-color: rgba(30,30,46,0.8);
+  background-color: rgba(30,30,46,0.7);
 }
 
 #temperature.critical {
@@ -175,7 +169,7 @@ label:focus {
 }
 
 #language {
-  background: rgba(30,30,46,0.8);
+  background: rgba(30,30,46,0.7);
   color: #cdd6f4;
   padding: 0 5px;
   margin: 6px 3px;
