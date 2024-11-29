@@ -18,7 +18,6 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false,
         "interval": 5
     },
     "memory": {
