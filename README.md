@@ -74,7 +74,7 @@ yay -S discover-overlay
 
 
 ## Install every dependency command (after installing gnome)
-ˋˋˋ
+ˋˋˋshell
 yay -S git hyprland hypridle hyprpaper hyprpicker hyprshot pavucontrol rofi-wayland swaync swww-git ttf-font-awesome ttf-roboto-mono thunar tumbler waybar 
 wlogout cliphist kitty fastfetch neofetch neovim tmux yazi starship vencord discord discover-overlay zsh eza bat pipes.sh fzf
 ˋˋˋ
