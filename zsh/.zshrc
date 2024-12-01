@@ -17,6 +17,9 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # Binds
 bindkey '^f' autosuggest-accept
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 
 # Aliases 
 alias ls="eza --color=always --git --no-filesize --icons=always --no-user --no-permissions"
