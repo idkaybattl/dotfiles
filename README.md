@@ -77,5 +77,5 @@ yay -S discover-overlay
    ```shell
    yay -S git hyprland hypridle hyprpaper hyprpicker hyprshot pavucontrol rofi-wayland swaync swww-git ttf-font-awesome ttf-roboto-mono thunar tumbler waybar 
    wlogout cliphist kitty fastfetch neofetch neovim tmux yazi starship discord discover-overlay zsh eza bat pipes.sh fzf stow
-   vencord-installer cider ttf-meslo-nerd xwaylandvideobridge-git hyprpolkitagent gparted
+   vencord-installer cider ttf-meslo-nerd xwaylandvideobridge-git hyprpolkitagent gparted hyprlock
    ```
