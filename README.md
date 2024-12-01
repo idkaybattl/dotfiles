@@ -75,5 +75,5 @@ yay -S discover-overlay
 
 ## Install every dependency command (after installing gnome)
    ```shell
-   yay -S git hyprland hypridle hyprpaper hyprpicker hyprshot pavucontrol rofi-wayland swaync swww-git ttf-font-awesome ttf-roboto-mono thunar tumbler waybar wlogout cliphist kitty fastfetch neofetch neovim tmux yazi starship discord discover-overlay zsh eza bat pipes.sh fzf stowvencord-installer cider ttf-meslo-nerd xwaylandvideobridge-git hyprpolkitagent gparted hyprlock qemu-block-gluster qemu-block-iscsi samba qemu-user-static libvirt bridge-utils virt-manager
+   yay -S git hyprland hypridle hyprpaper hyprpicker hyprshot pavucontrol rofi-wayland swaync swww-git ttf-font-awesome ttf-roboto-mono thunar tumbler waybar wlogout cliphist kitty fastfetch neofetch neovim tmux yazi starship discord discover-overlay zsh eza bat pipes.sh fzf stowvencord-installer cider ttf-meslo-nerd xwaylandvideobridge-git hyprpolkitagent gparted hyprlock qemu-block-gluster qemu-block-iscsi samba qemu-user-static libvirt bridge-utils virt-manager dnsmasq openbsd-netcat dmidecode
    ```
