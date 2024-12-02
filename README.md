@@ -73,7 +73,7 @@ yay -S discover-overlay
 - Color Scheme from [catppuccin](https://github.com/catppuccin/yazi)
 
 
-## Install every dependency command (after installing gnome)
+## Install every dependency command (after installing gnome and yay)
    ```shell
    yay -S git hyprland hypridle hyprpaper hyprpicker hyprshot pavucontrol rofi-wayland swaync swww-git ttf-font-awesome ttf-roboto-mono thunar tumbler waybar wlogout cliphist kitty fastfetch neofetch neovim tmux yazi starship discord discover-overlay zsh eza bat pipes.sh fzf stow vencord-installer cider ttf-meslo-nerd xwaylandvideobridge-git hyprpolkitagent gparted hyprlock qemu-block-gluster qemu-block-iscsi samba qemu-user-static libvirt bridge-utils virt-manager dnsmasq openbsd-netcat dmidecode os-prober update-grub
    ```
