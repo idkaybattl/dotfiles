@@ -13,7 +13,7 @@ button {
   border-color: #cba6f7;
   text-decoration-color: #cdd6f4;
   color: #cdd6f4;
-  background-color: #1e1e2e;
+  background-color: rgba(30, 30, 46, 0.7);
   border-style: solid;
   border-width: 1px;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ button {
 }
 
 button:hover {
-  background-color: #cba6f7;
+  background-color: rgba(202, 166, 247, 0.7);
   text-decoration-color: #1e1e2e;
   color: #1e1e2e;
   outline-style: none;
