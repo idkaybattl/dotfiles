@@ -1,7 +1,7 @@
 * {
   all: unset;
   font-size: 14px;
-  font-family: "Ubuntu Nerd Font";
+  font-family: "MesloLGS Nerd Font";
   transition: 200ms;
 }
 
@@ -23,14 +23,15 @@ slider {
 .floating-notifications.background .notification-row .notification-background {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
   border-radius: 12.6px;
-  margin: 4px 18px;
-  background-color: rgba(30, 30, 46, 1);
+  margin: 18px;
+  background-color: #1e1e2e;
   color: #cdd6f4;
   padding: 0;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification {
   padding: 7px;
+  border-radius: 12.6px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
@@ -39,7 +40,6 @@ slider {
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content {
   margin: 7px;
-  border-radius: 100px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content .summary {

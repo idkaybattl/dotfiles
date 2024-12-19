@@ -16,7 +16,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 
 # Binds
-bindkey '^f' autosuggest-accept
+bindkey "^f" autosuggest-accept
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
@@ -25,9 +25,10 @@ bindkey "^[[1;5D" backward-word
 alias ls="eza --color=always --git --no-filesize --icons=always --no-user --no-permissions"
 alias vim="nvim"
 alias cat='bat --theme="Catppuccin Mocha"'
-alias code='vscodium'
 alias blahaj='display3d /home/ari/.blahaj/blahaj.obj'
 alias pipes='pipes.sh'
+alias clear='clear; fastfetch'
+
 
 # Initialize Starship
 eval "$(starship init zsh)"

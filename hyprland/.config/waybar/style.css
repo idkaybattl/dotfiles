@@ -2,7 +2,7 @@
   border: none;
   border-radius: 1px;
   /* `ttf-font-awesome` is required to be installed for icons */
-  font-family: "MesloLGS Nerd Font Mono", "Roboto Mono Medium", Helvetica, Arial, sans-serif;
+  font-family: "MesloLGS Nerd Font Mono", "Font Awesome 5 Free", "Roboto Mono Medium", Helvetica, Arial, sans-serif;
 
   font-size: 13px;
   min-height: 0;
@@ -66,6 +66,7 @@ window#waybar.hidden {
 #mode,
 #idle_inhibitor,
 #mpd,
+#custom-swaync,
 #custom-wlogout {
   padding: 0 8px;
   margin: 4px 5px;
