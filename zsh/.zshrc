@@ -28,7 +28,8 @@ alias cat='bat --theme="Catppuccin Mocha"'
 alias blahaj='display3d /home/ari/.blahaj/blahaj.obj'
 alias pipes='pipes.sh'
 alias clear='clear; fastfetch'
-
+alias "yay -Syu discord"="yay -Syu discord;vencordinstaller"
+alias py=python
 
 # Initialize Starship
 eval "$(starship init zsh)"
