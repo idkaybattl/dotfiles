@@ -19,12 +19,14 @@ source "${ZINIT_HOME}/zinit.zsh"
 # Aliases 
 alias ls="eza --color=always --git --no-filesize --icons=always --no-user --no-permissions"
 alias vim="nvim"
+alias vi="nvim"
 alias cat='bat --theme="Catppuccin Mocha"'
 alias blahaj='display3d /home/ari/.blahaj/blahaj.obj'
 alias pipes='pipes.sh'
 alias clear='clear; fastfetch'
 alias "yay -Syu discord"="yay -Syu discord;vencordinstaller"
 alias py=python
+alias ssh='kitten ssh'
 
 # Initialize Starship
 eval "$(starship init zsh)"
