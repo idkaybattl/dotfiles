@@ -14,18 +14,22 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+bspc config focus_follows_pointer true
+
 sxhdk &
 polybar -r &
 picom --config $HOME/.config/picom/picom.conf &
 nitrogen --restore &
 dunst &
 
+bspc config ignore_ewmh_focus true
+
+bspc rule -a discord desktop=^9 follow=off
+bspc rule -a Cider desktop=^10 follow=off
+bspc rule -a firefox desktop=^2 follow=off -o
+bspc rule -a kitty desktop=^1 follow=off -o
+
 firefox &
 kitty &
 discord &
 cider &
-
-bspc rule -a discord desktop=^9 follow=off -o
-bspc rule -a Cider desktop=^10 follow=off -o
-bspc rule -a firefox desktop=^2 follow=off -o
-bspc rule -a kitty desktop=^1 follow=off -o
