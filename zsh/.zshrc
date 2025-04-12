@@ -70,3 +70,5 @@ eval "$(fzf --zsh)"
 bindkey "^f" autosuggest-accept
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+export PATH="$HOME/.local/bin:$PATH"

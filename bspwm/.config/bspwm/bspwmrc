@@ -33,3 +33,7 @@ firefox &
 kitty &
 discord &
 cider &
+
+sleep 2
+bspc config ignore_ewmh_focus false
+
