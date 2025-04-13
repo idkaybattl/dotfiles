@@ -6,6 +6,7 @@ return {
 
 		configs.setup({
 			auto_install = true,
+      ensure_installed = { "latex", },
 			sync_install = false,
 			highlight = { enable = true },
 			indent = { enable = true },
