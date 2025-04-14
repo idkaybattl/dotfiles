@@ -8,7 +8,10 @@ return {
 				null_ls.builtins.formatting.stylua,
 
 				-- python
-				null_ls.builtins.diagnostics.pylint,
+				null_ls.builtins.diagnostics.pylint.with({
+          extra_args = { "--disable=C0114,C0115,C0116" },
+        }),
+
 				null_ls.builtins.formatting.isort,
 				null_ls.builtins.formatting.black,
 
