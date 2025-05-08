@@ -4,6 +4,10 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor HDMI-0 -d I II III IV V VI VII VIII IX X
 
+# stop screen idling
+xset -dpms &
+xset s off &
+
 # Rosé pine 
 bspc config focused_border_color "#9ccfd8"
 
@@ -24,16 +28,12 @@ dunst &
 
 bspc config ignore_ewmh_focus true
 
-bspc rule -a discord desktop=^9 follow=off
-bspc rule -a Cider desktop=^10 follow=off
+bspc rule -a vesktop desktop=^10 follow=off
 bspc rule -a firefox desktop=^2 follow=off -o
 bspc rule -a kitty desktop=^1 follow=off -o
 
 firefox &
 kitty &
-discord &
-cider &
+vesktop &
 
-sleep 2
-bspc config ignore_ewmh_focus false
-
+sleep 2 && bspc config ignore_ewmh_focus false

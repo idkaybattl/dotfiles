@@ -1,12 +1,12 @@
 {
-    "height": 33,
+  "height": 33,
 
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "pulseaudio", "cpu", "memory", "battery", "battery#bat2", "network", "clock", "custom/swaync", "custom/wlogout"],
+    "modules-left": ["clock", "network", "battery", "battery#bat2", "pulseaudio", "cpu", "memory",],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["tray", "custom/swaync", "custom/wlogout"],
     "tray": {
-        "icon-size": 16,
+        "icon-size": 15,
         "spacing": 10
     },
     "clock": {
@@ -17,11 +17,11 @@
         "format-alt": "{:%d.%m.%y}"
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}% <span size='large'></span>",
         "interval": 5
     },
     "memory": {
-        "format": "{}% ",
+        "format": "{}% <span size='large'></span>",
         "interval": 5,
     },
     "battery": {
@@ -30,44 +30,43 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format-charging": "{capacity}% <span size='large'></span>",
+        "format-plugged": "{capacity}% <span size='large'></span>",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["<span size='large'></span>", "<span size='large'></span>", "<span size='large'></span>", "<span size='large'></span>", "<span size='large'></span>"]
     },
     "battery#bat2": {
         "bat": "BAT2"
     },
     "network": {
-        "format": "{ifname} {ipaddr}"
+        "format": "{ifname}"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": " {icon}",
-        "format-muted": "",
-    //    "format-source": "{volume}% ",
-    //    "format-source-muted": "",
+        "format-bluetooth": "{volume}% {icon}<span size='large'></span>",
+        "format-muted": "<span size='large'></span>",
+    //    "format-source": "{volume}% <span size='large'></span>",
+    //    "format-source-muted": "<span size='large'></span>",
         "format-icons": {
-            "headphone": "",
-            "hands-free": " ",
-            "headset": " ",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headphone": "<span size='large'></span>",
+            "hands-free": "<span size='large'></span>",
+            "headset": "<span size='large'></span>",
+            "phone": "<span size='large'></span>",
+            "portable": "<span size='large'></span>",
+            "car": "<span size='large'></span>",
+            "default": ["<span size='large'></span>", "<span size='large'></span>", "<span size='large'></span>"]
         },
         "on-click": "pavucontrol",
         "tooltip": false
     },
     // Notification Center
     "custom/swaync": {
-        "format": "",
+        "format": "<span size='large'></span>",
         "on-click": "swaync-client -t -sw"
     },
     // Power Button
     "custom/wlogout": {
-        "format": "",
+        "format": "<span size='large'></span>",
         "on-click": "wlogout -b 5 -P 0"
     }
 }

@@ -18,6 +18,9 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
+-- other options
+vim.opt.scrolloff = 15
+
 vim.diagnostic.config({
 	virtual_text = true,
 	signs = true,
