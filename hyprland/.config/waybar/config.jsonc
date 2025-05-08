@@ -1,6 +1,12 @@
 {
   "height": 33,
 
+  // margins
+  "margin-top": 10,
+  "margin-right": 10,
+  "margin-left": 10,
+  "margin-bottom": 0,
+
     // Choose the order of the modules
     "modules-left": ["clock", "network", "battery", "battery#bat2", "pulseaudio", "cpu", "memory",],
     "modules-center": ["hyprland/workspaces"],

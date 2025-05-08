@@ -1,6 +1,8 @@
+@import "./rose-pine.css";
+
 * {
   border: none;
-  border-radius: 1px;
+  border-radius: 0;
   /* `ttf-font-awesome` is required to be installed for icons */
   font-family: "MesloLGS Nerd Font Mono", "Font Awesome 5 Free", "Roboto Mono Medium", Helvetica, Arial, sans-serif;
 
@@ -9,43 +11,41 @@
 }
 
 window#waybar {
-  background-color: rgba(40, 20, 80, 0.4);
-  color: #ffffff;
+  background-color: @surface;
+  color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 0;
+  border-radius: 8px;
 }
 
 window#waybar.hidden {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 #workspaces {
-  padding: 5px 0;
+  margin: 5px;
 }
 
 #workspaces button {
-  padding: 0 5px 2px 5px;
-  margin-left: 10px;
-  background-color: rgba(30,30,46,0);
-  color: #cdd6f4;
-  box-shadow: inset 0 -3px rgba(203, 166, 247, 0.25);
+  padding: 0 3px 1px 3px;
+  margin: 0 6px 1px 6px;
+  color: @iris;
+  box-shadow: inset 0 -3px @muted;
 }
 
 #workspaces button:hover {
-  background: rgba(35, 30, 46, 0.3);
-  box-shadow: inset 0 -3px #cdd6f4;
+  background: @overlay;
+  box-shadow: inset 0 -3px @subtle;
 }
 
 #workspaces button.active {
-  background-color: rgba(35, 30, 46, 0);
-  box-shadow: inset 0 -3px #cba6f7;
-  color: #fff;
+  box-shadow: inset 0 -3px @iris;
+  color: @iris;
 }
 
 #workspaces button.urgent {
-  color: rgba(145, 196, 250, 1);
-  box-shadow: inset 0 -3px rgba(145, 196, 250, 1);
+  color: @love;
+  box-shadow: inset 0 -3px @love;
 }
 
 #mode {
@@ -70,15 +70,12 @@ window#waybar.hidden {
 #custom-wlogout {
   padding: 0 8px;
   margin: 4px 5px;
-  color: #cdd6f4;
 }
 
-#window {
-  margin: 0 4px;
-}
-
-#clock, #tray, #custom-wlogout {
-  background-color: rgba(30 ,30 ,46 ,0);
+#clock,
+#tray,
+#custom-wlogout {
+  background-color: rgba(30, 30, 46, 0);
 }
 
 #custom-wlogout {
