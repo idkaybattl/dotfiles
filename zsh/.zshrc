@@ -47,7 +47,7 @@ zinit snippet OMZP::command-not-found
 autoload -U compinit && compinit
 
 # History stuff
-HISTSIZE=5000
+HISTSIZE=10000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase

@@ -1,3 +1,12 @@
+-- auto lazy update on startup
+vim.api.nvim_create_autocmd("VimEnter", {
+    callback=function()
+        require"lazy".update(
+            {show=false,}
+        )
+    end
+})
+
 -- removes the tildes
 vim.opt.fillchars = { eob = " " }
 
@@ -14,9 +23,9 @@ vim.keymap.set('n', '<C-k>', '<Cmd>wincmd k<CR>', { noremap = true, silent = tru
 vim.keymap.set('n', '<C-l>', '<Cmd>wincmd l<CR>', { noremap = true, silent = true })
 
 vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+vim.cmd("set tabstop=4")
+vim.cmd("set softtabstop=4")
+vim.cmd("set shiftwidth=4")
 
 -- other options
 vim.opt.scrolloff = 15

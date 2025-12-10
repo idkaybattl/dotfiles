@@ -9,14 +9,14 @@ return {
 
 				-- python
 				null_ls.builtins.diagnostics.pylint.with({
-          extra_args = { "--disable=C0114,C0115,C0116" },
-        }),
+					extra_args = { "--disable=C0114,C0115,C0116,R0903,R0904,C0103," },
+				}),
 
 				null_ls.builtins.formatting.isort,
 				null_ls.builtins.formatting.black,
 
-        -- markdown
-        null_ls.builtins.formatting.markdownlint,
+				-- markdown
+				null_ls.builtins.formatting.markdownlint,
 			},
 		})
 
