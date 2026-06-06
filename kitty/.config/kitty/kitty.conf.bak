@@ -10,7 +10,7 @@ confirm_os_window_close 0
 include theme.conf
 
 detect_urls yes
-# url_color #0087bd
+url_color #0087bd
 url_style curly
 
 scrollback_lines 1500
@@ -24,9 +24,3 @@ sync_to_monitor yes
 enable_audio_bell no
 
 map ctrl+shift+f send_text all clear\n cd `cdinteractive`\n
-
-
-# BEGIN_KITTY_THEME
-# Noctalia
-include current-theme.conf
-# END_KITTY_THEME
