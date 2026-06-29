@@ -40,6 +40,14 @@ hl.window_rule({ match = { class = "discord" }, workspace = 10 })
 
 -- random rules
 hl.window_rule({
+    name = "eldenring",
+    match = {
+        title = "ELDEN RING™",
+    },
+    render_unfocused = true,
+})
+
+hl.window_rule({
     name  = "firefox",
     match = {
         class = "firefox",
